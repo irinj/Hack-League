@@ -1,0 +1,161 @@
+<html>
+    <head>
+        <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@1"></script>
+<link rel=stylesheet href=style.css>
+
+<title>alleviateit.com.in</title>
+</head>
+<body>
+
+
+<bg>
+<img src="images/6.JPEG">
+<img src="images/2.JPEG">
+<img src="images/12.JPEG">
+<img src="images/14.JPEG">
+</bg>
+
+
+<div class=all>
+
+<nav>
+<menu>
+<a href="index.html" id=nl>Home</a>
+<a href="abt.html" class=nl>About</a>
+<a href="eve.html" class=nl>Events</a>
+<a href="att.html" class=nl>Volunteer</a>
+<a href="gal.html" class=nl>Donation</a>
+<a href="cont.html" class=nl>Contact Us</a>
+</menu>
+<div class=srh><input placeholder=Search..><button class=button><span>Go</span></button></div></nav>
+
+<nav1>
+
+<div class=v1>
+<a href=htpp://www.facebook.com><img src="images/fb.PNG"></a><br><br>
+<a href=htpp://www.twitter.com><img src="images/tt.PNG"></a><br><br>
+<a href=htpp://www.instagram.com><img src="images/l.JPEG"></a><br><br>
+<a href=htpp://www.youtube.com><img src="images/yt.PNG"></a><br><br>
+<a href=htpp://www.linkedin.com><img src="images/i.PNG"></a><br><br>
+</div>
+</nav1>
+
+
+
+
+<div class=head><center>
+<h1><fff>Alleviate</fff>It</h1>
+<bbb>Let us give a hand...</bbb>
+</center>
+</div>
+
+
+<div class=body style="height:1300;">
+<div class=mar>
+<br>
+
+
+<div class=h1>
+<h1>UPDATES</h1>
+<marquee direction=up scrollamount=4 height=150>
+<li>We are pleased to announce that our campaign has made significant progress in the past month, with a strong showing of support from our community and key endorsements from influential leaders in the field.</li><br>
+<li> Thanks to the generous donations and support of our community, we have been able to make a meaningful impact on the lives of those in need.</li><br>
+
+
+
+</marquee>
+</div>
+
+
+<div class=h2>
+<h1>AN OVERVIEW</h1>
+<p>Overcoming poverty is not a gesture of charity. It is an act of justice. It is the protection of a fundamental human right, the right to dignity and a decent life.” — Nelson Mandela.
+    Hunger can be viewed as a dimension of extreme poverty. It is often called the most severe and critical manifestation of poverty.
+</p>
+</div>
+
+
+<div class=h3>
+    <div id="login-section">
+        <h1>LOGIN</h1>
+        <form method=get action=scc.html id=signin-form>
+        <input type=text placeholder=USERNAME required>
+        <input type=password placeholder=PASSWORD required>
+        <center><button type=submit>LOGIN</button><br><br><a href="signup.html">create account</a></center>
+        </form>
+    </div>
+    <div id="user-section" class="hidden"></div>
+</div>
+
+
+
+<div class=box><center>
+<img src="images/7.JPEG">
+<h1>OUR ACTIVITIES</h1>
+<p>Poverty is the greatest cause of hunger around the world – in both higher-wealth and low- to middle-income countries. Most people who are hungry live in extreme poverty.So we are trying to alleviate it as we can.</p>
+<a href=abt.html><button>CONTD. READING</button></a></center>
+
+</div>
+
+
+
+<div class=boxc><center>
+<img src="images/10.JPEG">
+<h1>HELPING HAND</h1>
+<p>Millions live with hunger and malnourishment because they simply cannot afford to buy enough food, cannot afford nutritious foods or cannot afford the farming supplies they need to grow enough good food. </p>
+<a href="gal.html"><button>CONTD. READING</button></a>
+
+</div>
+
+
+
+
+
+<div class=box><center>
+<img src="images/8.JPEG">
+<h1>OUR MISSION</h1>
+<p>Overcoming poverty is not a task of charity, it is an act of justice. Like Slavery and Apartheid, poverty is not natural. It is man-made and it can be overcome and eradicated by the actions of human beings. Sometimes it falls on a generation to be great.</p>
+<a href=att.html><button>CONTD. READING</button></a></center>
+</div>
+
+
+<h2>About us..<hr></h2>
+<p>Where justice is denied, where poverty is enforced, where ignorance prevails, and where any one class is made to feel that society is in an organized conspiracy to oppress, rob, and degrade them, neither persons nor property will be safe.
+    Poverty is the most exceedingly terrible type of viciousness. Hold hands together to abolish poverty.
+</p>
+
+
+</div>
+</div>
+
+<footer>
+<center>
+&copy;2022 | <a>alleviateit</a><br>
+Powered by <a>Hackleague</a><br></center>
+</footer>
+</div>
+<script src="/script.js">
+</script>
+<script>
+document.addEventListener("DOMContentLoaded", function (event) {
+    var  user = getUser();
+    if(user) {
+        document.getElementById('login-section').classList.add('hidden');
+        var userSection = document.getElementById('user-section')
+        userSection.classList.remove('hidden');
+        userSection.innerHTML = "Signed in as " + user.email;
+    } else {
+        var signinForm = document.getElementById("signin-form");
+        signinForm.addEventListener("submit", login);
+    }
+    var searchForm = document.getElementById("search-form");
+    searchForm.addEventListener("submit", search)
+});
+</script>
+</body>
+
+</html>
+
+
+
+
